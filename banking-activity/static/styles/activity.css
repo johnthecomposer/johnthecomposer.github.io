@@ -1,0 +1,145 @@
+
+body{
+     display: flex;
+     justify-content: center;
+     padding-top: 3px;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-size: 18px;
+     background-color: #0091c3;
+}
+
+/* flexbox 'table' grid */
+#accounts-table{
+     min-width: 300px;
+     background-color: white;
+}
+
+#table-header, .table-row{
+     display: flex;
+     border-bottom: 1px solid #E0E0E0;
+     padding: 16px;
+     justify-content: space-between;
+}
+#table-header{
+     align-items: flex-end;
+     padding: 0;
+     border-bottom: 2px solid lightgrey;
+}
+.table-row{
+     align-items: center;
+}
+
+#table-header > div{
+     display: flex;
+     padding: 6px 16px;
+}
+#table-header > div:first-child{
+     align-items: flex-end;
+     justify-content: flex-start;
+     height: 45px;
+}
+#table-header > div:nth-child(2) > div:first-child{
+     display: flex;
+     padding-bottom: 3px;
+}
+#table-header > div:nth-child(2) .sort-arrow{
+     margin-top: -3px;
+     margin-right: 2px;
+}
+
+.table-cell{
+     flex: 1 1 auto;
+     /*background-color: #f0f0f0;*/
+}
+.table-cell:nth-child(2){
+     display: flex;
+     justify-content: flex-end;
+}
+.table-cell:nth-child(even){
+     flex-direction: column;
+     align-items: flex-end;
+}
+.table-cell:first-child .sort-arrow > .arrow{
+}
+.table-cell:nth-child(2) .sort-arrow{
+}
+
+/* controls */
+.sort-arrow{
+     visibility: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 20px;
+     height: 26px;
+     margin-bottom: -2px;
+     margin-left: 3px;
+}
+.arrow{
+     height: 50%;
+     color: #0091c3;
+}
+
+
+/* state */
+.visible{
+     visibility: visible;
+}
+.ascending{
+}
+.descending{
+     transform: rotate(180deg);
+}
+.positive{
+     color: limegreen;
+}
+.negative{
+     color: red;
+}
+.sort-active{
+     background-color: #E0E0E0;
+}
+
+/* text styles */
+.changes{
+     font-size: 0.8rem;
+}
+.greytext, .nochange{
+     color: grey;
+}
+.header-text{
+     opacity: 0.8;
+}
+.account-name{
+     font-weight: bold;
+}
+#load-more, .account-name{
+     color: steelblue;
+}
+#load-more{
+     text-align: center;
+     padding: 15px;
+}
+
+/* responsive styles */
+@media only screen and (max-width: 1023px){
+    /* tablet and mobile */
+
+}
+
+@media only screen and (max-width: 639px){
+    /* mobile */
+    #accounts-table{
+         background-color: white;
+         width: 94%;
+    }
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px){
+     /* tablet */
+}
+
+@media only screen and (min-width: 1024px){
+    /* desktop */
+}

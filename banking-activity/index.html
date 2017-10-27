@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Accounts</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="static/styles/activity.css">
+     </head>
+     <body>
+          <div id="accounts-table">
+               <div id="table-header">
+                    <div class="table-cell">
+                         <div id="account_id" class="header-text sortable">Account</div>
+                         <div class="sort-arrow ascending visible"><div class="arrow">^</div></div>
+                    </div>
+                    <div class="table-cell">
+                         <div>
+                              <div class="sort-arrow ascending"><span class="arrow">^</span></div>
+                              <div id="cash" class="header-text sortable">Available Cash</div>
+                         </div>
+                         <div class="header-text greytext">Today's Change</div>
+                    </div>
+               </div>
+          </div>
+          <div id="load-more">Load more</div>
+     </body>
+     <script src="api/data.js"></script>
+     <script src="static/script/activity.js"></script>
+</html>

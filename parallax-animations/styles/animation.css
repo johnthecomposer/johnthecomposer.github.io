@@ -1,0 +1,58 @@
+img, a{
+     position: absolute;
+     opacity: 0;
+}
+.product{
+     top: -30px;
+     right: -230px;
+}
+.message{
+     width: 280px;
+     height: 233px;
+     left: 10px;
+}
+.super, .fresh{
+     width: 150px;
+     height: 30px;
+     top: 10px;
+     opacity: 1;
+}
+.super{
+     left: -150px;
+}
+.fresh{
+     right: -150px;
+}
+.resolve{
+     transform: scale(0.2);
+     top: -290px;
+     left: -150px;
+     z-index: 99;
+}
+.link, .cta{
+     bottom: 7px;
+     width: 150px;
+     height: 30px;
+}
+.link{
+     left: 25%;
+}
+.bubble{
+     position: absolute;
+     top: 110px;
+     right: 150px;
+     background-color: rgb(255, 182, 193);
+     height: 4px;
+     width: 4px;
+     border-radius: 50%;
+     opacity: 0;
+     z-index: 100;
+}
+#main-container{
+     position: relative;
+     width: 300px;
+     height: 250px;
+     margin: 0 auto;
+     border: 1px solid black;
+     overflow: hidden;
+}

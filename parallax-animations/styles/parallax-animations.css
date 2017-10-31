@@ -1,0 +1,169 @@
+/* typography */
+html, body{
+  font-family: 'Fredericka the Great', sans-serif;
+  color: #163B56;
+  overflow-x: hidden;
+}
+html{
+  font-size: 62.5%; /* Source: https://gregrickaby.com/2013/05/using-the-golden-ratio-and-rems/ */
+}
+body{
+  font-size: 1.6rem;
+  line-height: 1.625; /* line-height-base (26) ÷ fontbase (16) */
+  /* Source: (for line-height-base) https://pearsonified.com/typography/ */
+  background-color: rgb(217, 198, 168);
+  border: 30px solid transparent;
+}
+header{
+  width: 100%;
+  height: 60px;
+  z-index: 999;
+  padding: 0 30px;
+}
+footer{
+  padding: 30px 0;
+}
+header, footer{
+  background-color: rgb(235, 213, 179);
+}
+section{
+  padding: 12px 100px;
+  background-color: antiquewhite;
+}
+h1,h2,h3,h4{
+  line-height: 1.04;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.7rem;
+}
+
+.anchor-offset{
+  position: absolute;
+  top: -60px;
+}
+.fixed{
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+}
+.fixed.top{
+  top: 0;
+}
+
+/* parallax */
+.parallax{
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 400px;
+  margin-top: 60px;
+}
+.parallax.morning{
+  background-image: url('../images/pexels-photo-207247.jpeg');
+}
+.parallax.afternoon{
+  background-image: url('../images/road-sky-clouds-cloudy.jpg');
+}
+.parallax.evening{
+  background-image: url('../images/sunset-field-poppy-sun-priroda.jpg');
+}
+.parallax.night{
+  background-image: url('../images/pexels-photo-433155.jpeg');
+}
+
+/* animation */
+.wisp{
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.parallax.morning .wisp{
+  top: 84px;
+  left: 298px;
+  background-color: rgb(200,255,100);
+  box-shadow: 0 0 17px rgb(255,255,210);
+}
+.parallax.afternoon .wisp{
+  bottom: -30px;
+  left: -100px;
+  background-color: rgb(0,100,200);
+  box-shadow: 0 0 17px rgb(255,200,255);
+}
+.parallax.evening .wisp{
+  bottom: 400px;
+  right: 100px;
+  background-color: rgb(255,153,0);
+  box-shadow: 0 0 17px rgb(255,100,100);
+}
+.parallax.night .wisp{
+  top: 30px;
+  right: -100px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0 0 17px rgb(0,191,255);
+}
+
+/* clocks */
+.clock-case{
+  opacity: 0.8;
+  display: inline-block;
+  margin: 12px;
+}
+.clock, .clock > .time{
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.clock{
+  position: relative;
+  background-color: lightgrey;
+  overflow: hidden;
+}
+.clock > .time{
+  position: absolute;
+}
+.clock > .time.morning{
+  background-color: rgb(200,255,100);
+  border-radius: 0 0 18px 18px;
+  bottom: -18px;
+  right: -18px;
+}
+.clock > .time.afternoon{
+  background-color: rgb(0,100,200);
+  border-radius: 18px 0 18px 18px;
+  top: 18px;
+  left: -18px;
+}
+.clock > .time.evening{
+  background-color: rgb(255,153,0);
+  border-radius: 18px 18px 0 0;
+  top: -18px;
+  left: -18px;
+}
+.clock > .time.night{
+  background-color: rgb(255,255,255);
+  border-radius: 0 18px 18px 0;
+  top: -18px;
+  right: -18px;
+}
+
+/* state */
+a:hover{
+  text-decoration: none;
+}
+/*.clock-case:hover{
+  cursor: pointer;
+}*/
+.clock-case.active, .clock-case:hover{
+  opacity: 1;
+}
+.clock-case.active > .clock, .clock-case:hover > .clock{
+  background-color: darkgrey;
+}

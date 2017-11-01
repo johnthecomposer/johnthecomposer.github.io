@@ -1,0 +1,35 @@
+html, body{
+  font-family: 'Ubuntu', sans-serif;
+  color: #163B56;
+  overflow-x: hidden;
+}
+html{
+  font-size: 62.5%; /* Source: https://gregrickaby.com/2013/05/using-the-golden-ratio-and-rems/ */
+}
+body{
+  font-size: 1.6rem;
+  line-height: 1.625; /* line-height-base (26) ÷ fontbase (16) */
+  /* Source: (for line-height-base) https://pearsonified.com/typography/ */
+  background-color: linen;
+  /*border: 30px solid transparent;*/
+  box-shadow: inset 0 0 0 3vh lightblue;
+  height: 100vh;
+}
+header{
+  flex-direction: column;
+  height: 100%;
+}
+.container{
+  box-shadow: inset 0 0 0 2vh moccasin;
+  height: 50vh;
+  margin-top: 25vh;
+  max-width: 80vw;
+}
+nav > .linkwrap > a{
+  text-align: center;
+  color: chocolate;
+}
+nav > .linkwrap > a:hover{
+  text-decoration: none;
+  color: coral;
+}

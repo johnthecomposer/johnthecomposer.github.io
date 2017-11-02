@@ -167,3 +167,8 @@ a:hover{
 .clock-case.active > .clock, .clock-case:hover > .clock{
   background-color: darkgrey;
 }
+
+/* pagination */
+.pagination-nav > .arrow-nav.previous{
+  visibility: visible;
+}

@@ -1,4 +1,4 @@
-img, a{
+#main-container img, #main-container a{
      position: absolute;
      opacity: 0;
 }

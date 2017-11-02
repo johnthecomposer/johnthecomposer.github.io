@@ -4,6 +4,9 @@
   margin: 20px;
   /*color: chocolate;*/
 }
+.pagination-nav > .back-to-top{
+  text-align: center;
+}
 .pagination-nav > .arrow-nav a{
   text-align: center;
   color: chocolate;

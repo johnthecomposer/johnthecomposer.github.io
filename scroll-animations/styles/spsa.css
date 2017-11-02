@@ -136,7 +136,7 @@ section > .background-container.loaded.fade-in:after{
 section h3{
   opacity: 0.5;
   background-color: #163B56;
-  box-shadow: -1px 1px 0 3px lightgrey;
+  box-shadow: -1px 1px 0 1px lightgrey;
 }
 header{
   background-color: white;

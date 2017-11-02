@@ -12,7 +12,7 @@ $(document).ready(() => {
   $('.scroll.arrow').click((e) => {
     var hdr = $('header');
     var destination = 'section:first-of-type';
-    //var destination_id = $(destination).id;
+
     if(!hdr.hasClass('top')){
       spsa.scrollToElement(destination, 1000);
       spsa.affixElement('header', 'top', 1200, () => {
@@ -54,7 +54,7 @@ $(document).ready(() => {
       var selector = '#' + this_image.id;
       if(this_image.type === 'section'){
         if(spsa.detectElementInVerticalView(selector)){
-          spsa.slideFrameFadeIn(this_image, direction, 'fast');
+          spsa.slideFrameFadeIn(this_image, direction, 'medium');
           if(!$(selector).hasClass('fade-in')){
                $(selector).addClass('fade-in');
           }
@@ -219,6 +219,7 @@ const spsa = (($, imagesData) => {
        $('html, body').animate({scrollTop: px}, speed);
      },
      slideFrameFadeIn: function (image, direction){
+          console.log('slideFrameIn called')
        // moves element at a defined speed in opposite direction of scroll
        // image is supplied as an image object from this.state.images
        let spd, amt, target, elm, inc, nst, calc, init, ttl;
@@ -246,7 +247,7 @@ const spsa = (($, imagesData) => {
           this_prp.range.upper = 0;
          }
          if(this_prp.pval === 'init'){
-           init = prp === 'marginLeft' ? this_prp.range.lower : elm.css(prp);
+           init = prp === 'marginLeft' ? Math.floor(this_prp.range.lower) : Math.floor(elm.css(prp));
            console.log('init: ' + init + '; typeof init: ' + typeof init)
            this_prp.pval = typeof init !== 'number' ? parseFloat(init) : init;
            console.log('changing init value for ' + image.title +
@@ -254,6 +255,7 @@ const spsa = (($, imagesData) => {
          }
          calc = this_prp.calc;
          this_prp.pval += calc ? calc(inc) : inc;
+     //     if(typeofthis_prp.resolution.toString().split('.')[1])
          nst = this_prp.pval.toFixed(1);
          //console.log('nst ' + nst)
 console.log(image.title +

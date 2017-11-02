@@ -1,29 +1,56 @@
 <!DOCTYPE html>
-     <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Accounts</title>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-          <link rel="stylesheet" type="text/css" href="static/styles/activity.css">
-     </head>
-     <body>
-          <div id="accounts-table">
-               <div id="table-header">
-                    <div class="table-cell">
-                         <div id="account_id" class="header-text sortable">Account</div>
-                         <div class="sort-arrow ascending visible"><div class="arrow">^</div></div>
-                    </div>
-                    <div class="table-cell">
-                         <div>
-                              <div class="sort-arrow ascending"><span class="arrow">^</span></div>
-                              <div id="cash" class="header-text sortable">Available Cash</div>
-                         </div>
-                         <div class="header-text greytext">Today's Change</div>
-                    </div>
-               </div>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JohnTheComposer-WebDeveloper</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- local styles -->
+  <link rel="stylesheet" type="text/css" href="file:///Users/supertime/jchost/johnthecomposer.github.io/pagination.css">
+  <link rel="stylesheet" type="text/css" href="/pagination.css">
+  <link rel="stylesheet" type="text/css" href="static/styles/activity.css">
+</head>
+
+<body>
+  <div class="container">
+    <main class="row">
+      <div id="accounts-table">
+        <div id="table-header">
+          <div class="table-cell">
+            <div id="account_id" class="header-text sortable">Account</div>
+            <div class="sort-arrow ascending visible">
+              <div class="arrow">^</div>
+            </div>
           </div>
-          <div id="load-more">Load more</div>
-     </body>
-     <script src="api/data.js"></script>
-     <script src="static/script/activity.js"></script>
+          <div class="table-cell">
+            <div>
+              <div class="sort-arrow ascending"><span class="arrow">^</span></div>
+              <div id="cash" class="header-text sortable">Available Cash</div>
+            </div>
+            <div class="header-text greytext">Today's Change</div>
+          </div>
+        </div>
+      </div>
+      <div id="load-more">Load more</div>
+    </main>
+    <footer>
+      <div class="row justify content-between pagination-nav fixed-bottom">
+        <i class="col fa fa-long-arrow-left fa-4 arrow-nav previous" aria-hidden="true">
+          <a href="/banner-animation/"></a>
+        </i>
+        <i class="col fa fa-long-arrow-right fa-4 arrow-nav next" aria-hidden="true">
+          <a href="/"></a>
+        </i>
+      </div>
+    </footer>
+  </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="api/data.js"></script>
+<script src="static/script/activity.js"></script>
 </html>

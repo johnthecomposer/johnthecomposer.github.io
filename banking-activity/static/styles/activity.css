@@ -12,6 +12,7 @@ body{
 #accounts-table{
      min-width: 300px;
      background-color: white;
+     margin: 100px auto;
 }
 
 #table-header, .table-row{
@@ -120,6 +121,12 @@ body{
      text-align: center;
      padding: 15px;
 }
+
+/* pagination */
+.pagination-nav > .arrow-nav.next{
+  visibility: hidden;
+}
+
 
 /* responsive styles */
 @media only screen and (max-width: 1023px){

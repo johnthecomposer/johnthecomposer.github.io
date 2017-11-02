@@ -33,3 +33,11 @@ nav > .linkwrap > a:hover{
   text-decoration: none;
   color: coral;
 }
+nav > .linkwrap > a:active{
+  opacity: 0.5;
+}
+
+/* pagination */
+.pagination-nav > .arrow-nav.previous{
+  visibility: hidden;
+}

@@ -1,0 +1,26 @@
+/* pagination-nav */
+.pagination-nav{
+  /*height: 80px;*/
+  margin: 20px;
+  /*color: chocolate;*/
+}
+.pagination-nav > .arrow-nav{
+  text-align: center;
+  color: chocolate;
+}
+.pagination-nav > .arrow-nav:hover{
+  text-decoration: none;
+  color: coral;
+}
+.pagination-nav > .arrow-nav:active{
+  opacity: 0.5;
+}
+.pagination-nav > .arrow-nav{
+  font-size: 50px;
+}
+.pagination-nav > .arrow-nav.previous{
+  text-align: left;
+}
+.pagination-nav > .arrow-nav.next{
+  text-align: right;
+}

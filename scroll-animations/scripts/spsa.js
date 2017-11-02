@@ -7,7 +7,7 @@ $(document).ready(() => {
   /* handlers */
 
   // click
-  $('a').click((e) => e.preventDefault());
+  $('#main-buttons a, #arrow-wrapper a').click((e) => e.preventDefault());
 
   $('.scroll.arrow').click((e) => {
     var hdr = $('header');

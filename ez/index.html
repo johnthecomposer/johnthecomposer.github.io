@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>GitHub API Search/Bar Chart, Particle Animation</title>
+  <link rel="stylesheet" type="text/css" href="style/ez.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:regular,bold">
+</head>
+<body>
+  <button id="main-toggle" value="bar-chart">show bar chart</button>
+  <div class="toggle" id="particle-animation">
+    <header>
+      <input id="init" type="text" title="initial string, e.g. L.R.L.L.R.L.R.R."
+        placeholder="initial string, e.g. L.R.L.L.R.L.R.R."
+        minlength="1" maxlength="42" required>
+      <button id="set" value="set">set</button>
+      <input id="speed" type="number" title="integer between 1 and 42; number of steps to move"
+        value="1" step="1" min="1" max="42" required>
+      <button id="animate" value="animate">animate</button>
+    </header>
+    <section id="chamber"></section>
+  </div>
+  <div class="toggle" id="bar-chart">
+    <header>
+      <input id="search" type="text" title="search GitHub users"
+        placeholder="search GitHub users">
+      <button id="go" value="go">go</button>
+    </header>
+    <section>
+      <div id="chart"></div>
+      <div id="displaying-next">
+        <div id="displaying"></div>
+        <button class="pagination" id="first" value="first">&lt;&lt;</button>
+        <button class="pagination" id="prev" value="prev">&lt;</button>
+        <button class="pagination" id="next" value="next">&gt;</button>
+        <button class="pagination" id="last" value="last">&gt;&gt;</button>
+      </div>
+      <div>
+        <pre id="result"></pre>
+      </div>
+    </section>
+  </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js"></script>
+  <script src="script/bar_chart.js"/></script>
+  <script src="script/particle_animation.js"/></script>
+  <script src="script/ez.js"/></script>
+</html>

@@ -1,3 +1,6 @@
+/*
+EquityZen Programming Challenge - solution by John Celentano - john.celentano@gmail.com
+*/
 $(document).ready(function(){
 
 /*** particle animation ***/

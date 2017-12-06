@@ -1,7 +1,6 @@
 /*
 EquityZen Programming Challenge - solution by John Celentano - john.celentano@gmail.com
 */
-
 function get_letters(sentence){
   let u = [];
   for(let l = 0; l < sentence.length; l++){

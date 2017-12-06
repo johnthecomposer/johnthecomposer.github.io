@@ -1,6 +1,4 @@
-/*
-EquityZen Programming Challenge - solution by John Celentano - john.celentano@gmail.com
-*/
+
 let a, init, val, len, speed;
 
 class Animation {

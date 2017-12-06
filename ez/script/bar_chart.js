@@ -1,6 +1,4 @@
-/*
-EquityZen Programming Challenge - solution by John Celentano - john.celentano@gmail.com
-*/
+
 let charMap = [
   {letter: "A", lcount: 0},
   {letter: "B", lcount: 0},

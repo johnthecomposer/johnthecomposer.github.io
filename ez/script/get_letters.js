@@ -1,6 +1,3 @@
-/*
-EquityZen Programming Challenge - solution by John Celentano - john.celentano@gmail.com
-*/
 
 function get_letters(sentence){
   let u = [];
